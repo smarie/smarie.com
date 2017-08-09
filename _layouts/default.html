@@ -1,0 +1,108 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> 	
+<html lang="en"> 
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />	<!-- Force Latest IE rendering engine -->
+    <title>{{ page.title }}</title>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'XX-xxxxxxx-x']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type =
+          'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ?
+                  'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'> 
+    <link href="http://feeds.feedburner.com/smarie" rel="alternate" title="Smarie" type="application/atom+xml" /> 
+    <!--link rel="shortcut icon" href="/static/images/favicon.jpg" /-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+
+	<!-- this now contains all the css compressed together -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <!--
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/css/skeleton.css">
+    <link rel="stylesheet" href="/static/css/layout.css">
+    -->
+
+    <!--[if IE 7]>
+      <script src="/static/css/font-awesome-ie7.css"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">	
+      <div id='mobile' class='two columns hidden'>
+        <ul>
+          <li><a href='/'>Smarie</a></li>
+          <li><span class="gray">Sylvain Marié</span></li>
+          <li><a href="mailto:sylvain.marie@schneider-electric.com">sylvain.marie@schneider-electric.com</a></li>
+          <!--li><a href="http://twitter.com/Smarie">@Smarie</a></li-->
+        </ul>
+      </div>
+
+      <div class="four columns sidebar">
+        <section>
+          <a id="avatar" href="/"></a>
+
+          <ul id="social">
+            <li>
+              <a href="mailto:sylvain.marie@schneider-electric.com?subject=hi" id="sidebar-email" class="icon-envelope-alt" title="Say hi" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Email']);"></a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/sylvain-marie-15883a2" id="sidebar-linkedin" class="icon-linkedin-sign" style="font-size: 25px;" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'LinkedIn']);"></a>
+            </li>
+
+            <!--li>
+              <a href="http://twitter.com/Smarie" id="sidebar-twitter" class="icon-twitter" title="Follow me" style="font-size: 28px;" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Twitter']);"></a>
+            </li-->
+			
+			<li>
+              <a href="https://www.researchgate.net/profile/Sylvain_Marie3" id="sidebar-researchgate" class="ai ai-researchgate-square ai-fw" title="My ResearchGate profile" style="font-size: 22px;vertical-align: text-top;padding-top: 1px" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'ResearchGate']);"></a>
+            </li>
+			
+			<!--li>vertical-align: text-top text-indent: -2em; text-align: center;   ;vertical-align: text-top;padding-top: 1px
+			  orcid: not necessary > researchgate is there
+			</li-->
+
+            <li>
+              <a href="https://github.com/smarie" id="sidebar-github" class="icon-github" title="I share and fork code here" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Github']);"></a>
+            </li>
+          </ul>
+
+          <ul id="me">
+            <li>Sylvain Marié</span></li>
+            <li class="gray">
+              Analytics &amp; Software <a href="http://www.schneider-electric.com">@Schneider Electric</a></br>
+            </li>
+          </ul>
+
+        </section>
+      </div>
+
+      {{ content }}
+    </div>
+  </body>
+</html> 

@@ -1,0 +1,8 @@
+permalink: '/:title/'
+exclude: [vendor]
+future: true
+timezone: Europe/Paris
+
+collections:
+  collection:
+    output: true

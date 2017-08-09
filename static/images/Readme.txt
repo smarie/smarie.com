@@ -1,0 +1,1 @@
+Put images here, reference them in markdown using ![](/static/images/<path>/<file>)

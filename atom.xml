@@ -1,0 +1,35 @@
+---
+layout:
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Smarie</title>
+ <link href="https://smarie.github.io/smarie.com/atom.xml" rel="self"/>
+ <link href="https://smarie.github.io/smarie.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>https://smarie.github.io/smarie.com</id>
+ <author>
+   <name>Smarie</name>
+   <email>sylvain.marie@schneider-electric.com</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   {% if post.external_url %}
+   <link href="{{ post.external_url }}"/>
+   {% else %}
+   <link href="https://smarie.github.io/smarie.com{{ post.url }}"/>
+   {% endif %}
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>https://smarie.github.io/smarie.com{{ post.id }}</id>
+
+   {% if post.external_url %}
+   <content type="html">This post was written by Smarie on another blog. <a href="{{ post.external_url }}">Read this post on another site.</a></content>
+   {% else %}
+   <content type="html">{{ post.content | xml_escape }}</content>
+   {% endif %}
+ </entry>
+ {% endfor %}
+</feed>
