@@ -6,3 +6,5 @@ timezone: Europe/Paris
 collections:
   collection:
     output: true
+
+theme: jekyll-theme-cayman
