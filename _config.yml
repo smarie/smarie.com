@@ -1,3 +1,4 @@
+root: /smarie.com
 permalink: '/:title/'
 exclude: [vendor]
 future: true
